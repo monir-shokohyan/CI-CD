@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - "master"  # Runs when pushing to the main branch
+      - 'master' # Runs when pushing to the main branch
 
 jobs:
   install:
@@ -50,5 +50,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.SECRETTOKEN }}  # Use the GitHub token for authentication
+          GITHUB_TOKEN: ${{ secrets.SECRETTOKEN }} # Use the GitHub token for authentication
           publish_dir: dist
