@@ -48,7 +48,7 @@ jobs:
         run: tar -xjf build.tar.bz2
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/action-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
           GITHUB_TOKEN: ${{ secrets.SECRETTOKEN }}  # Use the GitHub token for authentication
           publish_dir: dist
