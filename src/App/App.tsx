@@ -1,5 +1,5 @@
 function App() {
-  const monir = "monir"
+  const monir = 'monir'
   console.log(monir)
   return (
     <>
