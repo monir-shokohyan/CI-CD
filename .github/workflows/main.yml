@@ -48,8 +48,7 @@ jobs:
         run: tar -xjf build.tar.bz2
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/action-gh-pages@v3
         with:
-          branch: deployCICD  # Deploy to the 'deployCICD' branch
-          folder: dist        # Your build output directory
           GITHUB_TOKEN: ${{ secrets.SECRETTOKEN }}  # Use the GitHub token for authentication
+          publish_dir: dist
