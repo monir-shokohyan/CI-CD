@@ -52,3 +52,5 @@ jobs:
         with:
           branch: deployCICD  # Deploy to the 'deployCICD' branch
           folder: dist        # Your build output directory
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}  # Use the GitHub token for authentication
