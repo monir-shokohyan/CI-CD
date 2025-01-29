@@ -51,4 +51,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           GITHUB_TOKEN: ${{ secrets.SECRETTOKEN }} # Use the GitHub token for authentication
-          publish_dir: dist
+          publish_dir: dist/
