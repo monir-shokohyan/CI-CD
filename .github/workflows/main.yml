@@ -50,5 +50,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: deployCICD   # Deploy to the 'gh-pages' branch
-          folder: dist       # Your build output directory
+          branch: deployCICD  # Deploy to the 'deployCICD' branch
+          folder: dist        # Your build output directory
