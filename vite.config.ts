@@ -5,5 +5,5 @@ import prettier from 'vite-plugin-prettier'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), viteTsConfigPaths(), prettier()],
-  base: '/gh-pages/',
+  // base: '/CI-CD/',
 })
